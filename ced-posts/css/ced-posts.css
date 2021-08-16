@@ -1,0 +1,108 @@
+/* CED Board */
+.ced-container {
+	border: 2px solid black;
+	padding: 60px 30px 60px;
+}
+.ced-create {
+	display: block;
+	margin: 0 auto 40px;
+}
+.ced-container h3 {
+	margin: 16px;
+	text-align: center;
+}
+.ced-post {
+	margin-bottom: 12px;
+	text-decoration: underline;
+	cursor: pointer;
+	font-size: 32px;
+}
+
+	
+/* Modal */
+.ced-modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	max-width: none!important;
+	width: 100%;
+	height: calc(100% - 32px); /* 32px is the height of admin bar */
+	overflow: auto;
+	background-color: #474e5d;
+	margin-top: 32px;
+}
+.ced-modal-close {
+	position: absolute;
+	right: 30px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+.ced-modal-close:hover,
+.ced-modal-close:focus {
+	color: #71f7c5;
+	cursor: pointer;
+}
+.ced-modal-content {
+	background-color: #fefefe;
+	margin: 4% auto;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 700px;
+	padding: 30px;
+}
+.ced-modal-title {
+	text-align: center;
+	margin-bottom: 12px;
+}
+.ced-modal-content p {
+	margin-bottom: 12px;
+}
+.ced-modal-content input[type=text] {
+	width: 100%;
+}
+.ced-modal-content textarea {
+	resize: none;
+	height: 250px;
+	overflow: auto;
+}
+.ced-modal-content input[type=file] {
+	width: 100%;
+	cursor: pointer;
+}
+.ced-modal-content input[type=file]:focus {
+	color: var(--form--color-text);
+	outline-offset: 2px;
+	outline: 2px dotted var(--form--border-color);
+}
+.ced-modal-content .clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.ced-modal-submit-btn,
+.ced-modal-cancel-btn {
+	float: left;
+	width: 40%;
+	margin: 20px 5% 0;
+}
+@media only screen and (max-width: 600px) {
+	.ced-modal {
+		height: 100%;
+		margin-top: 0;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.ced-modal-close {
+		right: 10px;
+	}
+	.ced-modal-submit-btn,
+	.ced-modal-cancel-btn {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
